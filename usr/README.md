@@ -1,32 +1,42 @@
 # Tugas Etika dan Tanggung Jawab Profesi Hukum
 
-Aplikasi ini adalah sebuah platform penampil dokumen digital (document reader) interaktif yang memuat tugas akademis mengenai **Etika dan Tanggung Jawab Profesi Hukum**. Dokumen yang ditampilkan berfokus pada analisis satu kasus pelanggaran kode etik oleh profesi advokat beserta tahapan penyelesaiannya yang komprehensif.
+Sebuah aplikasi Flutter yang menyajikan dokumen analisis kasus pelanggaran kode etik profesi hukum secara digital. Didesain khusus untuk memenuhi kebutuhan tugas mahasiswa semester 6 jurusan Hukum dengan format yang rapi, profesional, dan mudah dibaca (setara dengan 2 halaman Word).
 
-Aplikasi dirancang setara dengan 2 halaman format kertas secara padat dan disajikan dalam bentuk antarmuka (UI) aplikasi Flutter yang responsif, rapi, dan mudah dibaca baik melalui peramban Web, Desktop, maupun Perangkat Seluler.
+## Ikhtisar Produk
 
-## Ikhtisar Konten (Studi Kasus)
-Kasus yang diangkat dalam aplikasi ini adalah sebuah kasus pelanggaran kode etik berat di mana seorang advokat melakukan:
-1. **Penggelapan Uang Ganti Rugi Klien** (Dana kompensasi dari pihak lawan disembunyikan dan diambil tanpa hak).
-2. **Penelantaran Perkara** (Mengabaikan klien, memutus komunikasi, dan tidak menjalankan kewajiban profesi).
+Aplikasi ini berfungsi sebagai "Document Reader" interaktif yang memuat studi kasus nyata mengenai etika profesi hukum di Indonesia. Contoh yang diangkat difokuskan pada satu kasus utama: **Kasus Advokat Menyuap Hakim (OC Kaligis - 2015)** sesuai dengan spesifikasi tugas. 
 
-### Penyelesaian Kasus
-Penyelesaian ditelaah dari dua aspek hukum:
-- **Jalur Etik:** Sidang Majelis Dewan Kehormatan Organisasi Advokat yang berujung pada sanksi **Pemberhentian Tetap (Pemecatan)**.
-- **Jalur Pidana:** Pelaporan ke pihak Kepolisian atas tindak pidana **Penggelapan dalam Jabatan dan Penipuan (Pasal 374 & 378 KUHP)**.
+Fitur utama aplikasi:
+- **Tampilan Dokumen Profesional**: Desain yang bersih dengan batas lebar maksimal agar nyaman dibaca di layar lebar (Web/Desktop) maupun di perangkat mobile.
+- **Tipografi Responsif**: Menggunakan hierarki font yang jelas untuk membedakan judul, subjudul, dan isi paragraf.
+- **Tabel Pelanggaran Etik**: Menampilkan pelanggaran berdasarkan Kode Etik Advokat Indonesia, UU Advokat, dan Hukum Pidana secara terstruktur dengan baris tabel yang dapat dibedakan (alternating row colors).
+- **Timeline Resolusi Kasus**: Menampilkan proses penyelesaian sistemik dari Tahap 1 (Penangkapan KPK) hingga Tahap 4 (Sanksi Profesi PERADI) dalam bentuk kartu *timeline* visual.
 
-## Fitur Utama
-* **Antarmuka Dokumen Interaktif:** Tata letak disesuaikan dengan proporsi kertas dokumen resmi dengan dukungan lebar responsif (`BoxConstraints`).
-* **Format Teks Elegan:** Menggunakan tipografi profesional yang terinspirasi dari literatur hukum (skema warna navy blue yang kalem, spasi huruf ideal, dan rata kanan-kiri/`justify`).
-* **Navigasi Simpel:** Desain tunggal (single page application) yang berfokus penuh pada kenyamanan membaca.
+## Alur Pengguna
 
-## Teknologi
-* **Flutter Framework** - Digunakan untuk membuat User Interface aplikasi (mendukung Web, iOS, dan Android).
-* **Material Design 3** - Untuk memberikan tampilan UI yang segar, elegan, dan profesional.
+1. Pengguna membuka aplikasi dan akan langsung melihat halaman dokumen (Tugas Etika Profesi Hukum).
+2. Pengguna dapat menggulir ke bawah untuk membaca latar belakang identitas penyusun tugas.
+3. Pengguna meninjau **Duduk Perkara** kasus suap advokat OC Kaligis.
+4. Pengguna mempelajari pasal-pasal yang dilanggar melalui **Tabel Pelanggaran Kode Etik**.
+5. Pengguna menelusuri **Rekomendasi Penyelesaian Sistemik** yang disajikan dalam antarmuka berbasis *timeline*.
+
+## Tech Stack
+
+- **Framework**: Flutter (mendukung Web, iOS, Android, macOS, Windows, Linux)
+- **Bahasa**: Dart
+- **UI Design**: Material 3 (dengan skema warna profesional berwarna dasar *Dark Blue*)
+
+## Cara Menjalankan Aplikasi
+
+Pastikan Flutter telah terinstal di sistem Anda.
+
+1. Lakukan `git clone` pada repositori ini.
+2. Jalankan perintah `flutter pub get` untuk mengunduh dependensi (jika ada).
+3. Jalankan aplikasi menggunakan perintah `flutter run` di terminal Anda.
+4. (Opsional) Untuk menjalankan di web, gunakan `flutter run -d chrome`.
 
 ---
 
 ## Tentang CouldAI
 
-Aplikasi penampil dokumen tugas ini di-generate secara otomatis menggunakan [CouldAI](https://could.ai). CouldAI adalah sebuah alat pembuat aplikasi lintas platform berbasis AI (Kecerdasan Buatan) yang mampu mengubah *prompt* atau deskripsi perintah sederhana menjadi aplikasi _native_ nyata untuk perangkat iOS, Android, Web, dan Desktop. 
-
-Melalui agen AI yang dapat bekerja secara otonom, CouldAI secara langsung mengarsiteki, menulis kode, menguji, mendeploy, hingga mengiterasi perangkat lunak siap pakai.
+Aplikasi ini dibuat menggunakan [CouldAI](https://could.ai), sebuah AI app builder untuk aplikasi lintas platform (cross-platform). CouldAI dapat mengubah prompt teks Anda menjadi aplikasi native iOS, Android, Web, dan Desktop yang nyata melalui agen AI otonom yang merancang arsitektur, membangun, menguji, melakukan *deploy*, dan melakukan iterasi pada aplikasi agar siap masuk ke tahap produksi.
